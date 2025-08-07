@@ -594,3 +594,66 @@ body {
       url("XD") !important;
   }
 }
+
+/* Estilos adicionales para las nuevas secciones */
+#resume_section, #repositories_section, #contact_section {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+}
+
+.resume-content, .github-stats, .contact-content {
+  margin: 2vh 0px;
+}
+
+.education-item, .cert-item, .contact-item {
+  margin: 2vh 0px;
+  padding: 1vh 0px;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills-list li {
+  margin: 0.5vh 0;
+  padding: 0.5vh 0;
+  border-left: 3px solid var(--text-color);
+  padding-left: 1vw;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2vh;
+  margin: 2vh 0;
+}
+
+.github-stats {
+  background: rgb(20, 20, 20);
+  padding: 2vh;
+  border-radius: 5px;
+  margin: 2vh 0;
+}
+
+.github-stats p {
+  margin: 1vh 0;
+  font-size: 18px;
+}
+
+.period {
+  color: var(--blog-gray-color);
+  font-style: italic;
+  display: block;
+  margin: 0.5vh 0;
+}
+
+@media (max-width: 800px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-list li {
+    padding-left: 3vw;
+  }
+}
