@@ -261,14 +261,17 @@ body {
 
 #about a,
 #username a {
-  color: #fff !important;
+  color: var(--accent-color) !important;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
 #about a:hover,
 #username a:hover {
-  text-decoration: underline;
+  color: var(--accent-secondary) !important;
+  text-shadow: 0 0 5px var(--accent-secondary);
 }
 
 #about span {
@@ -324,19 +327,43 @@ body {
   padding: 2.5vh 4%;
   margin: 1vh 0px;
   display: inline-block;
-  border-radius: 5px;
+  border-radius: 0;
   color: var(--text-color);
-  border: 1px solid rgb(0, 0, 0, 0.08);
-  box-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
-  transition: 0.4s ease-in-out;
+  border: 1px solid var(--accent-color);
+  background: var(--card-bg);
+  box-shadow: var(--border-glow);
+  transition: all 0.3s ease-in-out;
   transform: scale(1);
+  position: relative;
+  overflow: hidden;
+}
+
+.projects section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--accent-color),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.projects section:hover::before {
+  left: 100%;
 }
 
 .projects section:hover {
   cursor: pointer;
-  border: 1px solid rgb(0, 0, 0, 0);
-  box-shadow: 0px 15px 35px rgb(0, 0, 0, 0.06);
-  transform: scale(1.03);
+  border: 1px solid var(--accent-color);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  transform: scale(1.02);
+  background: rgba(20, 20, 20, 0.95);
 }
 
 .section_title {
@@ -345,6 +372,21 @@ body {
   margin: 1vh 0px;
   padding: 0px 1px;
   word-wrap: break-word;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.section_title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background: var(--accent-color);
+  box-shadow: 0 0 5px var(--accent-color);
 }
 
 .about_section {
@@ -371,7 +413,7 @@ body {
 }
 
 .socials {
-  color: #fff;
+  color: var(--accent-color);
   text-decoration: none;
   margin: 3vh 0px !important;
 }
@@ -380,10 +422,19 @@ body {
   display: inline-block !important;
   margin-right: 2vw !important;
   font-weight: normal !important;
+  transition: all 0.3s ease;
 }
 
 .socials span a {
   font-weight: normal !important;
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+}
+
+.socials span:hover a {
+  color: var(--accent-secondary);
+  text-shadow: 0 0 8px var(--accent-secondary);
+  transform: scale(1.2);
 }
 
 #blog_section {
@@ -575,42 +626,78 @@ body {
   background: var(--text-color);
 }
 :root {
-  --bg-color: rgb(10, 10, 10);
-  --text-color: #fff;
-  --blog-gray-color: rgb(180, 180, 180);
+  --bg-color: #0a0a0a;
+  --text-color: #e0e0e0;
+  --accent-color: #00ffff;
+  --accent-secondary: #ff0080;
+  --blog-gray-color: #888;
+  --card-bg: rgba(20, 20, 20, 0.8);
+  --border-glow: 0 0 10px rgba(0, 255, 255, 0.3);
   --background-image: linear-gradient(
       90deg,
-      rgba(10, 10, 10, 0.3),
-      rgb(10, 10, 10, 1)
+      rgba(0, 255, 255, 0.1),
+      rgba(10, 10, 10, 0.9)
     ),
     url("XD");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
-      rgba(10, 10, 10, 0.6)
+      rgba(0, 255, 255, 0.1)
     ),
     url("XD") center center fixed;
   --height: 50vh;
 }
 
 #display h1 {
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: #fff;
+  color: var(--text-color);
+  text-shadow: 0 0 10px var(--accent-color);
+  position: relative;
+}
+
+#display h1::before {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -2px 0 var(--accent-secondary);
+  top: 0;
+  color: var(--text-color);
+  background: none;
+  clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  animation: glitch 3s infinite;
 }
 
 #blog-display h1 {
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: #fff;
+  color: var(--text-color);
+  text-shadow: 0 0 10px var(--accent-color);
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
 .projects section {
-  background: rgb(20, 20, 20);
+  background: var(--card-bg);
 }
 
 #blog_section section {
-  background: rgb(20, 20, 20);
+  background: var(--card-bg);
 }
 
 @media (max-width: 800px) {
@@ -696,14 +783,19 @@ body {
 .skills-about-section .tech-item {
   display: block;
   margin: 0.8vh 0;
-  padding: 0.3vh 0;
+  padding: 0.5vh 1vh;
   font-size: 15px;
   color: var(--text-color);
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+  background: rgba(0, 255, 255, 0.05);
 }
 
 .skills-about-section .tech-item:hover {
-  color: #4a9eff;
+  color: var(--accent-color);
+  border-left: 3px solid var(--accent-color);
+  background: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
 }
 
 .skills-about-section .tech-item i {
@@ -724,19 +816,20 @@ body {
 }
 
 .education-about-section strong {
-  color: #4a9eff;
+  color: var(--accent-color);
   font-weight: bold;
+  text-shadow: 0 0 5px var(--accent-color);
 }
 
 .education-about-section a {
-  color: #4a9eff;
+  color: var(--accent-color);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .education-about-section a:hover {
-  color: #66b3ff;
-  text-decoration: underline;
+  color: var(--accent-secondary);
+  text-shadow: 0 0 8px var(--accent-secondary);
 }
 
 @media (max-width: 800px) {
