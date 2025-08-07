@@ -1,294 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>rmalanco</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="icon"
+      href="https://avatars.githubusercontent.com/u/101444985?v=4"
+      type="image/png"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>rmalanco</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-    crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-  <script src="js/index.js"></script>
-  <link rel="stylesheet" href="css/index.css">
-  <link rel="icon" href="https://avatars.githubusercontent.com/u/101444985?v=4" type="image/png">
-</head>
-
-<body>
-  <div id="loading">
-    <div id="spinner"></div>
-  </div>
-  <div id="profile">
-    <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/101444985?v=4) center;"></div>
-    <div id="username"><span style="display:block;">Rafael Malanco</span><a
-        href="https://github.com/rmalanco">@rmalanco</a></div>
-    <div id="userbio" style="display: block;">Con experiencia de 22 años en el área de informática, dando soporte técnico y desarrollando software. Me gustan los retos laborales, autodidacta y apasionado en el sector de informática TI.</div>
-    <div id="about">
-      <span style="display:block;"><i class="fas fa-users"></i> &nbsp; rmalanco</span>
-      <span style="display:block;"><i class="fas fa-envelope"></i> &nbsp; <a href="mailto:rmalanco@rmalanco.com">rmalanco@rmalanco.com</a></span>
-      <span style="display:block;"><i class="fas fa-link"></i> &nbsp; <a
-          href="https://rmalanco.com/">rmalanco.com</a></span>
-      <span style="display:block;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Metepec, México</span>
-      <span style="display:block;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-      <div class="socials">
-        <span style="display:inline-block;"><a href="https://twitter.com/RMalanco" target="_blank" class="socials"><i
-              class="fab fa-twitter"></i></a></span>
-        <span style="display:inline-block;"><a href="https://www.linkedin.com/in/rafael-malanco-velazquez-aa7340171/"
-            target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-        <span style="display:inline-block;"><a href="https://www.facebook.com/rmalanco" target="_blank"
-            class="socials"><i class="fab fa-facebook-f"></i></a></span>
-        <span style="display:inline-block;"><a href="https://www.instagram.com/genesismx1982/" target="_blank"
-            class="socials"><i class="fab fa-instagram"></i></a></span>
-        <span style="display:inline-block;"><a href="https://www.youtube.com/channel/UCD89PizJRsah50s8aaii7qA" target="_blank"
-            class="socials"><i class="fab fa-youtube"></i></a></span>
-        <span style="display:inline-block;"><a href="https://github.com/RMalanco" target="_blank"
-            class="socials"><i class="fab fa-github"></i></a></span>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
+    </div>
+    <div id="profile">
+      <div
+        id="profile_img"
+        style="
+          background: url(https://avatars.githubusercontent.com/u/101444985?v=4)
+            center;
+        "
+      ></div>
+      <div id="username">
+        <span style="display: block">Rafael Malanco</span
+        ><a href="https://github.com/rmalanco">@rmalanco</a>
       </div>
-    </div>
-  </div>
-  <div id="display">
-    <div id="work">
-      <h1>Hello World, my name is Rafael Malanco Velazquez</h1>
-      <p>Analista en programación con 22 años de experiencia en el área de informática, dando soporte técnico y desarrollando software. Me gustan los retos laborales, autodidacta y apasionado en el sector de informática TI.</p>
-      <div class="projects" id="work_section">
-        <a href="http://obeisant-paint.surge.sh/" target="_blank">
-          <section>
-            <div class="section_title">React App de Preguntas</div>
-            <div class="about_section">
-              <span style="display:block;">Una pequeña app de preguntas desarrollada en React.</span>
-            </div>
-          </section>
-        </a>
-        <a href="#" target="_blank">
-          <section>
-            <div class="section_title">Sistema de Logística Crown</div>
-            <div class="about_section">
-              <span style="display:block;">Aplicación desarrollada en Visual Basic .NET WF para gestión de carga de material, transportes y tiempos de inicio/finalización de carga para área de logística.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; VB.NET</span>
-              <span><i class="fas fa-building"></i>&nbsp; Crown Brand Building Packaging</span>
-            </div>
-          </section>
-        </a>
-        <a href="#" target="_blank">
-          <section>
-            <div class="section_title">File Organizer</div>
-            <div class="about_section">
-              <span style="display:block;">Aplicación para organización automática de archivos y gestión de documentos.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C#</span>
-              <span><i class="fas fa-folder"></i>&nbsp; Herramienta de productividad</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://www.rmalanco.com" target="_blank">
-          <section>
-            <div class="section_title">ORTSA - Actualización Sitio Web</div>
-            <div class="about_section">
-              <span style="display:block;">Actualización y modernización de sitio web corporativo con nuevas funcionalidades.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML/CSS/JS</span>
-              <span><i class="fas fa-globe"></i>&nbsp; Desarrollo Web</span>
-            </div>
-          </section>
-        </a>
-        <!-- <a href="https://github.com/rmalanco/rmalanco.github.io" target="_blank">
-          <section>
-            <div class="section_title">rmalanco.github.io</div>
-            <div class="about_section">
-              <span style="display:block;">Config files for my GitHub profile.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
-        <a href="https://github.com/rmalanco/rmalanco" target="_blank">
-          <section>
-            <div class="section_title">rmalanco</div>
-            <div class="about_section">
-              <span style="display:block;">Config files for my GitHub profile.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:none;"><i class="fas fa-code"></i>&nbsp; null</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a> -->
+      <div id="userbio" style="display: block">
+        💭 codeando - Técnico Analista en Programación | Desarrollador .NET | Apasionado por la automatización y la mejora continua
       </div>
-    </div>
-    <div id="forks" style="display:none;">
-      <h1>Forks.</h1>
-      <div class="projects" id="forks_section"></div>
-    </div>
-    <div id="blog_section">
-      <h1>Blog.</h1>
-      <div id="blogs"></div>
-    </div>
-    <div id="resume_section">
-      <h1>Educación y Experiencia</h1>
-      <div class="resume-content">
-        <div class="education">
-          <h3>Educación</h3>
-          <div class="education-item">
-            <h4>Programador Analista en Sistemas Avanzados</h4>
-            <span class="period">1997 - 2000</span>
-            <p>ICEP - Instituto de computación y electrónica profesional, S.C.</p>
-          </div>
+      <div id="about">
+        <span style="display: block"
+          ><i class="fas fa-users"></i> &nbsp; rmalanco</span
+        >
+        <span style="display: block"
+          ><i class="fas fa-envelope"></i> &nbsp;
+          <a href="mailto:rmalanco@rmalanco.com">rmalanco@rmalanco.com</a></span
+        >
+        <span style="display: block"
+          ><i class="fas fa-link"></i> &nbsp;
+          <a href="https://rmalanco.com/">rmalanco.com</a></span
+        >
+        <span style="display: block"
+          ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Toluca. México</span
+        >
+        <span style="display: block"
+          ><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span
+        >
+        <div class="socials">
+          <span style="display: inline-block"
+            ><a
+              href="https://twitter.com/RMalanco"
+              target="_blank"
+              class="socials"
+              ><i class="fab fa-twitter"></i></a
+          ></span>
+          <span style="display: inline-block"
+            ><a
+              href="https://www.linkedin.com/in/rafael-malanco-velazquez-aa7340171/"
+              target="_blank"
+              class="socials"
+              ><i class="fab fa-linkedin-in"></i></a
+          ></span>
+          <span style="display: inline-block"
+            ><a
+              href="https://www.facebook.com/rmalanco"
+              target="_blank"
+              class="socials"
+              ><i class="fab fa-facebook-f"></i></a
+          ></span>
+          <span style="display: inline-block"
+            ><a
+              href="https://www.instagram.com/genesismx1982/"
+              target="_blank"
+              class="socials"
+              ><i class="fab fa-instagram"></i></a
+          ></span>
+          <span style="display: inline-block"
+            ><a
+              href="https://www.youtube.com/channel/UCD89PizJRsah50s8aaii7qA"
+              target="_blank"
+              class="socials"
+              ><i class="fab fa-youtube"></i></a
+          ></span>
+          <span style="display: inline-block"
+            ><a
+              href="https://github.com/RMalanco"
+              target="_blank"
+              class="socials"
+              ><i class="fab fa-github"></i></a
+          ></span>
         </div>
-        
-        <div class="skills">
-          <h3>Lenguajes de Programación</h3>
-          <ul class="skills-list">
-            <li>C#</li>
-            <li>MS SQL Server</li>
-            <li>HTML, JS y CSS</li>
-            <li>PHP</li>
-            <li>MySQL</li>
-            <li>VB .NET</li>
-          </ul>
+      </div>
+    </div>
+    <div id="display">
+      <div id="work">
+        <h1>👋 ¡Hola! Soy Rafael Malanco</h1>
+        <p>
+          Hola, soy Rafael Malanco. Tengo más de 20 años de experiencia en el mundo de la
+          informática, combinando soporte técnico, administración de sistemas y desarrollo
+          de software. Me gusta resolver problemas reales con soluciones prácticas y
+          fáciles de usar.<br><br>
           
-          <h3>Habilidades Técnicas</h3>
-          <ul class="skills-list">
-            <li>Administración de servidores</li>
-            <li>Configuración de redes para equipos en dominios e intranets con Windows Server</li>
-            <li>Mantenimiento a Hardware y software</li>
-            <li>Desarrollo de aplicaciones</li>
-            <li>Análisis, administración de información y creación de bases de datos</li>
-            <li>Gestión de proyectos</li>
-          </ul>
+          Soy apasionado de la tecnología, autodidacta y siempre en busca de aprender algo
+          nuevo. Disfruto desde configurar servidores y redes, hasta crear aplicaciones
+          que ayuden a mejorar procesos dentro de una oficina o empresa.<br><br>
+          
+          Trabajo con tecnologías como VB.NET, C#, SQL Server, HTML, PHP y MySQL, y me
+          enfoco en construir sistemas sólidos que realmente hagan la diferencia para los
+          usuarios.
+        </p>
+        <div class="projects" id="work_section">
+          <a href="https://github.com/rmalanco/CamarasReviews" target="_blank">
+            <section>
+              <div class="section_title">CamarasReviews</div>
+              <div class="about_section">
+                <span style="display: block"
+                  >Aplicación web para reviews de cámaras desarrollada en C# .NET con Entity Framework.</span
+                >
+              </div>
+              <div class="bottom_section">
+                <span style="display: inline-block"
+                  ><i class="fas fa-code"></i>&nbsp; C#</span
+                >
+                <span><i class="fas fa-star"></i>&nbsp; 1</span>
+                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+              </div>
+            </section>
+          </a>
+          
+          <a href="https://github.com/rmalanco/rmalanco.github.io" target="_blank">
+            <section>
+              <div class="section_title">rmalanco.github.io</div>
+              <div class="about_section">
+                <span style="display: block"
+                  >Config files for my GitHub profile.</span
+                >
+              </div>
+              <div class="bottom_section">
+                <span style="display: inline-block"
+                  ><i class="fas fa-code"></i>&nbsp; HTML</span
+                >
+                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+              </div>
+            </section>
+          </a>
+          
+          <a href="https://github.com/rmalanco/webapi" target="_blank">
+            <section>
+              <div class="section_title">WebAPI</div>
+              <div class="about_section">
+                <span style="display: block"
+                  >API REST desarrollada en C# .NET para proyectos web.</span
+                >
+              </div>
+              <div class="bottom_section">
+                <span style="display: inline-block"
+                  ><i class="fas fa-code"></i>&nbsp; C#</span
+                >
+                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+              </div>
+            </section>
+          </a>
+          
+          <a href="https://github.com/rmalanco/minimalAPI" target="_blank">
+            <section>
+              <div class="section_title">MinimalAPI</div>
+              <div class="about_section">
+                <span style="display: block"
+                  >Implementación de Minimal API en .NET para desarrollos ligeros y eficientes.</span
+                >
+              </div>
+              <div class="bottom_section">
+                <span style="display: inline-block"
+                  ><i class="fas fa-code"></i>&nbsp; C#</span
+                >
+                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+              </div>
+            </section>
+          </a>
+          
+          <a href="https://github.com/rmalanco/proyectoef" target="_blank">
+            <section>
+              <div class="section_title">ProyectoEF</div>
+              <div class="about_section">
+                <span style="display: block"
+                  >Proyecto de ejemplo usando Entity Framework para manejo de datos.</span
+                >
+              </div>
+              <div class="bottom_section">
+                <span style="display: inline-block"
+                  ><i class="fas fa-code"></i>&nbsp; C#</span
+                >
+                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+              </div>
+            </section>
+          </a>
+          
+          <a href="https://github.com/rmalanco/Curso_HTML5" target="_blank">
+            <section>
+              <div class="section_title">Curso HTML5</div>
+              <div class="about_section">
+                <span style="display: block"
+                  >Material y ejemplos de curso de HTML5 para desarrollo web.</span
+                >
+              </div>
+              <div class="bottom_section">
+                <span style="display: inline-block"
+                  ><i class="fas fa-code"></i>&nbsp; HTML</span
+                >
+                <span><i class="fas fa-star"></i>&nbsp; 0</span>
+                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+              </div>
+            </section>
+          </a>
         </div>
-        
-        <div class="experience">
-          <h3>Experiencia Profesional Reciente</h3>
-          <div class="experience-item">
-            <h4>SUPPORT MEMBER</h4>
-            <span class="period">Octubre 2022 - Presente</span>
-            <p class="company">Softtek</p>
-            <ul>
-              <li>Administrar sistemas y aplicaciones, asegurando que estén actualizados, configurados correctamente y funcionando de manera óptima.</li>
-              <li>Proporcionar soporte técnico a los usuarios de sistemas y aplicaciones.</li>
-              <li>Participar en proyectos, colaborando con equipos de proyecto para implementar nuevos sistemas.</li>
+        </div>
+      </div>
+      <div id="forks" style="display: none">
+        <h1>Forks.</h1>
+        <div class="projects" id="forks_section"></div>
+      </div>
+      <div id="blog_section">
+        <h1>Blog.</h1>
+        <div id="blogs"></div>
+      </div>
+      <div id="resume_section">
+        <h1>Educación y Experiencia</h1>
+        <div class="resume-content">
+          <div class="education">
+            <h3>🎓 Educación</h3>
+            <div class="education-item">
+              <h4>Programador Analista en Sistemas Avanzados</h4>
+              <span class="period">1997 - 2000</span>
+              <p>ICEP - Instituto de computación y electrónica profesional, S.C.</p>
+            </div>
+            
+            <h3>🏆 Certificaciones</h3>
+            <div class="cert-item">
+              <h4><a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=969696" target="_blank">Scrum Fundamentals Certified (SFC)</a></h4>
+              <span class="period">2023</span>
+              <p>SCRUMstudy - Accreditation Body for Scrum and Agile</p>
+            </div>
+          </div>
+
+          <div class="skills">
+            <h3>🛠️ Tecnologías que domino</h3>
+            <ul class="skills-list">
+              <li>C# / .NET Core / .NET Framework</li>
+              <li>VB.NET</li>
+              <li>MS SQL Server / MySQL / PostgreSQL</li>
+              <li>HTML5 / CSS3 / JavaScript / jQuery</li>
+              <li>PHP / Laravel</li>
+              <li>Python</li>
+              <li>React / Angular</li>
+              <li>Git / GitHub / GitLab</li>
+              <li>Visual Studio / VS Code</li>
+              <li>Apache / IIS</li>
+              <li>Bootstrap</li>
+              <li>Entity Framework</li>
+            </ul>
+
+            <h3>🚀 Actualmente trabajando en</h3>
+            <ul class="skills-list">
+              <li>Migración y soporte de aplicaciones empresariales</li>
+              <li>Desarrollo de herramientas internas bajo arquitectura por capas</li>
+              <li>Optimización de bases de datos y lógica de negocio</li>
+              <li>Mejora continua de habilidades técnicas y soft skills</li>
             </ul>
           </div>
-          
-          <div class="experience-item">
-            <h4>ENCARGADO DE SISTEMAS</h4>
-            <span class="period">2021 - 2022</span>
-            <p class="company">ACS Global - Tween Chemical Products</p>
-            <ul>
-              <li>Administración de Servidores locales o remotos.</li>
-              <li>Diseño de aplicaciones y conversiones de tablas a aplicaciones robustas.</li>
-              <li>Soporte técnico en sitio a los usuarios.</li>
-            </ul>
-          </div>
-        </div>
-        
-        <div class="certifications">
-          <h3>Certificaciones</h3>
-          <div class="cert-item">
-            <h4><a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=969696" target="_blank">Scrum Fundamentals Certified (SFC)</a></h4>
-            <span class="period">2023</span>
-            <p>SCRUMstudy - Accreditation Body for Scrum and Agile</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="services_section">
-      <h1>Servicios</h1>
-      <div class="services-content">
-        <div class="service-item">
-          <h3><i class="fas fa-user"></i> INGENIERO SOPORTE EN SITIO</h3>
-          <p>Una de las partes esenciales en el área de Informática es la solución de requerimientos locales de usuarios los cuales requieren una atención básica o extensa sobre un problema, asesoría o consulta de la cual me apasiona poder ayudar y hacer su bienestar tecnológico más agradable.</p>
-        </div>
-        
-        <div class="service-item">
-          <h3><i class="fas fa-server"></i> ADMINISTRACIÓN DEL ÁREA DE SISTEMAS</h3>
-          <p>No es solo un servidor es todo un sistema encadenado de servicios los cuales ayudo a la empresa o oficina a sacar su máximo potencial, desde redes privadas, conexiones VPN, administración de usuario, servidores web, centro de datos, Servicios de impresión, Seguridad, Bases de datos, etc.</p>
-        </div>
-        
-        <div class="service-item">
-          <h3><i class="fas fa-code"></i> DESARROLLO DE SOFTWARE</h3>
-          <p>En la época actual la automatización de procesos en una oficina o empresa requiere aplicaciones a medida que sea fáciles de entender y poder implementar o migrar de una simple tabla a una aplicación donde se pueda tener lo requerido por el usuario.</p>
-        </div>
-        
-        <div class="service-item">
-          <h3><i class="fas fa-network-wired"></i> INFRAESTRUCTURA DE RED LAN Y WIFI</h3>
-          <p>Análisis y desarrollo de gestión de elementos de red como switch, hub, routers, VPN y DNS.</p>
-        </div>
-        
-        <div class="service-item">
-          <h3><i class="fas fa-globe"></i> DISEÑO WEB, HOSTING Y MARKETING</h3>
-          <p>Desarrollo de aplicaciones web, tanto para uso comercial o personal, brindando herramientas como el hosting y marketing y administrando los servicios brindados hacia el usuario para que todo esté automatizado.</p>
-        </div>
-        
-        <div class="service-item">
-          <h3><i class="fas fa-handshake"></i> CONSULTORÍA, ASESORÍA Y CAPACITACIÓN</h3>
-          <p>Me gusta poder ayudar a los usuarios en sus dudas, incidencias técnicas en cualquier requerimiento que se presente, así como el análisis de la solución más conveniente al perfil del usuario para poderle ayudar y sacar el mayor provecho.</p>
-        </div>
-      </div>
-    </div>
-    <div id="contact_section">
-      <h1>Contacto</h1>
-      <div class="contact-content">
-        <div class="contact-info">
-          <div class="contact-item">
-            <h3><i class="fas fa-map-marker-alt"></i> Dirección</h3>
-            <p>Metepec, México</p>
-          </div>
-          
-          <div class="contact-item">
-            <h3><i class="fas fa-envelope"></i> Email</h3>
-            <p><a href="mailto:rmalanco@rmalanco.com">rmalanco@rmalanco.com</a></p>
-          </div>
-          
-          <div class="contact-item">
-            <h3><i class="fas fa-phone"></i> Teléfono</h3>
-            <p>7203856631</p>
-          </div>
-          
-          <div class="contact-item">
-            <h3><i class="fas fa-globe"></i> Website</h3>
-            <p><a href="https://www.rmalanco.com" target="_blank">www.rmalanco.com</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="footer">
-      <div id="footer_text">
 
-        <span>© 2025 Rafael Malanco. All rights reserved.</span>
+          <div class="experience">
+            <h3>💼 Sobre mí</h3>
+            <p>Tengo más de 20 años de experiencia en el mundo de la informática, combinando soporte técnico, administración de sistemas y desarrollo de software. Me gusta resolver problemas reales con soluciones prácticas y fáciles de usar.</p>
+            
+            <p>Soy apasionado de la tecnología, autodidacta y siempre en busca de aprender algo nuevo. Disfruto desde configurar servidores y redes, hasta crear aplicaciones que ayuden a mejorar procesos dentro de una oficina o empresa.</p>
+            
+            <p>Trabajo con tecnologías como VB.NET, C#, SQL Server, HTML, PHP y MySQL, y me enfoco en construir sistemas sólidos que realmente hagan la diferencia para los usuarios.</p>
+          </div>
+        </div>
+      </div>
+      <div id="repositories_section">
+        <h1>📊 Estadísticas de GitHub</h1>
+        <div class="github-stats">
+          <p>🐙 <strong>27 repositorios públicos</strong></p>
+          <p>👥 <strong>1 seguidor · 1 siguiendo</strong></p>
+          <p>🏆 <strong>Logros:</strong> Pull Shark</p>
+          <p>💼 <strong>PRO</strong></p>
+        </div>
+      </div>
+      <div id="contact_section">
+        <h1>📫 ¿Quieres saber más de mí o colaborar?</h1>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+              <p>Toluca. México</p>
+            </div>
 
+            <div class="contact-item">
+              <h3><i class="fas fa-envelope"></i> Email</h3>
+              <p>
+                <a href="mailto:rmalanco@rmalanco.com">rmalanco@rmalanco.com</a>
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h3><i class="fas fa-globe"></i> Website</h3>
+              <p>
+                <a href="https://rmalanco.com" target="_blank"
+                  >rmalanco.com</a
+                >
+              </p>
+            </div>
+            
+            <div class="contact-item">
+              <h3><i class="fab fa-github"></i> GitHub</h3>
+              <p>
+                <a href="https://github.com/rmalanco" target="_blank"
+                  >@rmalanco</a
+                >
+              </p>
+            </div>
+            
+            <div class="contact-item">
+              <h3><i class="fab fa-linkedin"></i> LinkedIn</h3>
+              <p>
+                <a href="https://www.linkedin.com/in/rafael-malanco-velazquez-aa7340171/" target="_blank"
+                  >Rafael Malanco Velazquez</a
+                >
+              </p>
+            </div>
+            
+            <div class="contact-item">
+              <h3><i class="fab fa-twitter"></i> Twitter</h3>
+              <p>
+                <a href="https://x.com/RMalanco" target="_blank"
+                  >@RMalanco</a
+                >
+              </p>
+            </div>
+          </div>
+          
+          <div style="text-align: center; margin-top: 2vh;">
+            <h4>✨ Gracias por visitar mi perfil. Explora mis repos y no dudes en dejar una ⭐ si algo te parece útil. ¡Siempre abierto a compartir y crecer en comunidad! 🚀</h4>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div id="footer_text">
+          <span>© 2025 Rafael Malanco. All rights reserved.</span>
+        </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript">
-    setTimeout(function () {
-      document.getElementById("loading").classList.add("animated");
-      document.getElementById("loading").classList.add("fadeOut");
+    <script type="text/javascript">
       setTimeout(function () {
-        document.getElementById("loading").classList.remove("animated");
-        document.getElementById("loading").classList.remove("fadeOut");
-        document.getElementById("loading").style.display = "none";
-      }, 800);
-    }, 1500);
-    $.getJSON("blog.json", function (blog) {
-      blog = blog || [];
-      if (blog.length == 0) {
-        return (document.getElementById("blog_section").style.display =
-          "none");
-      }
-      for (var i = 0; i < blog.length; i++) {
-        $("#blogs").append(`
+        document.getElementById('loading').classList.add('animated');
+        document.getElementById('loading').classList.add('fadeOut');
+        setTimeout(function () {
+          document.getElementById('loading').classList.remove('animated');
+          document.getElementById('loading').classList.remove('fadeOut');
+          document.getElementById('loading').style.display = 'none';
+        }, 800);
+      }, 1500);
+      $.getJSON('blog.json', function (blog) {
+        blog = blog || [];
+        if (blog.length == 0) {
+          return (document.getElementById('blog_section').style.display =
+            'none');
+        }
+        for (var i = 0; i < blog.length; i++) {
+          $('#blogs').append(`
             <a href="./blog/${blog[i].url_title}/" target="_blank">
                 <section>
                     <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
@@ -301,40 +407,37 @@
                 </section>
             </a>
             `);
-      }
-    }).fail(function () {
-      return (document.getElementById("blog_section").style.display = "none");
-    });
-  </script>
+        }
+      }).fail(function () {
+        return (document.getElementById('blog_section').style.display = 'none');
+      });
+    </script>
 
-  <script>
-    const magicProjectsGrid = new MagicGrid({
-      container: "#work_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
+    <script>
+      const magicProjectsGrid = new MagicGrid({
+        container: '#work_section',
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true,
+      });
 
-    const magicForksGrid = new MagicGrid({
-      container: "#forks_section",
-      animate: false,
-      gutter: 30, // default gutter size
-      static: true,
-      useMin: false,
-      maxColumns: 2,
-      useTransform: true
-    });
+      const magicForksGrid = new MagicGrid({
+        container: '#forks_section',
+        animate: false,
+        gutter: 30, // default gutter size
+        static: true,
+        useMin: false,
+        maxColumns: 2,
+        useTransform: true,
+      });
 
-    $("document").ready(() => {
-      magicProjectsGrid.listen();
-      magicForksGrid.listen();
-    });
-  </script>
-
-
-</body>
-
+      $('document').ready(() => {
+        magicProjectsGrid.listen();
+        magicForksGrid.listen();
+      });
+    </script>
+  </body>
 </html>
