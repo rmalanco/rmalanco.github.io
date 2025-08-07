@@ -50,8 +50,8 @@ body {
 }
 
 #profile {
-  width: 24vw;
-  padding: 4vh 3vw;
+  width: 14vw;
+  padding: 4vh 1vw;
   height: 92vh;
   display: flex;
   flex-direction: column;
@@ -65,11 +65,11 @@ body {
 }
 
 #display {
-  width: 64vw;
+  width: 70vw;
   padding: 4vh 3vw;
   height: 92vh;
   display: inline-block;
-  padding-left: 33vw;
+  padding-left: 21vw;
 }
 
 #display h1 {
@@ -313,15 +313,15 @@ body {
 
 .projects a {
   /* 30px is the gutter size in magic grid */
-  width: calc(49% - 30px);
-  /* 49% avoids a weird single column on some wide screens */
+  width: calc(48% - 30px);
+  /* 48% to ensure cards fit properly */
   display: flex;
   text-decoration: none;
 }
 
 .projects section {
   width: 100%;
-  padding: 2.5vh 5%;
+  padding: 2.5vh 4%;
   margin: 1vh 0px;
   display: inline-block;
   border-radius: 5px;
@@ -625,16 +625,22 @@ body {
 }
 
 /* Estilos adicionales para las nuevas secciones */
-#resume_section, #repositories_section, #contact_section {
+#resume_section,
+#repositories_section,
+#contact_section {
   margin: 2vh 0px;
   padding: 4vh 0px !important;
 }
 
-.resume-content, .github-stats, .contact-content {
+.resume-content,
+.github-stats,
+.contact-content {
   margin: 2vh 0px;
 }
 
-.education-item, .cert-item, .contact-item {
+.education-item,
+.cert-item,
+.contact-item {
   margin: 2vh 0px;
   padding: 1vh 0px;
 }
@@ -737,16 +743,16 @@ body {
   .contact-info {
     grid-template-columns: 1fr;
   }
-  
+
   .skills-list li {
     padding-left: 3vw;
   }
-  
+
   .skills-about-section .tech-item {
     font-size: 14px;
     margin: 0.6vh 0;
   }
-  
+
   .education-about-section {
     font-size: 15px;
     margin: 1vh 0px;

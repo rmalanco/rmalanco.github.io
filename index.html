@@ -1,427 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>rmalanco</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.6.3.js"
-      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <script src="js/index.js"></script>
-    <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="icon"
-      href="https://avatars.githubusercontent.com/u/101444985?v=4"
-      type="image/png"
-    />
-  </head>
 
-  <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div
-        id="profile_img"
-        style="
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>rmalanco</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
+  <script src="js/index.js"></script>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/101444985?v=4" type="image/png" />
+</head>
+
+<body>
+  <div id="loading">
+    <div id="spinner"></div>
+  </div>
+  <div id="profile">
+    <div id="profile_img" style="
           background: url(https://avatars.githubusercontent.com/u/101444985?v=4)
             center;
-        "
-      ></div>
-      <div id="username">
-        <span style="display: block">Rafael Malanco</span
-        ><a href="https://github.com/rmalanco">@rmalanco</a>
-      </div>
-      <div id="userbio" style="display: block">Desarrollador .NET</div>
-      <div id="about">
-        <span style="display: block"
-          ><i class="fas fa-users"></i> &nbsp; rmalanco</span
-        >
-        <span style="display: block"
-          ><i class="fas fa-envelope"></i> &nbsp;
-          <a href="mailto:rmalanco@rmalanco.com">rmalanco@rmalanco.com</a></span
-        >
-        <span style="display: block"
-          ><i class="fas fa-link"></i> &nbsp;
-          <a href="https://rmalanco.com/">rmalanco.com</a></span
-        >
-        <span style="display: block"
-          ><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Toluca.
-          México</span
-        >
-        <span style="display: block"
-          ><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span
-        >
-        <div class="socials">
-          <span style="display: inline-block"
-            ><a
-              href="https://twitter.com/RMalanco"
-              target="_blank"
-              class="socials"
-              ><i class="fab fa-twitter"></i></a
-          ></span>
-          <span style="display: inline-block"
-            ><a
-              href="https://www.linkedin.com/in/rafael-malanco-velazquez-aa7340171/"
-              target="_blank"
-              class="socials"
-              ><i class="fab fa-linkedin-in"></i></a
-          ></span>
-          <span style="display: inline-block"
-            ><a
-              href="https://www.facebook.com/rmalanco"
-              target="_blank"
-              class="socials"
-              ><i class="fab fa-facebook-f"></i></a
-          ></span>
-          <span style="display: inline-block"
-            ><a
-              href="https://www.instagram.com/genesismx1982/"
-              target="_blank"
-              class="socials"
-              ><i class="fab fa-instagram"></i></a
-          ></span>
-          <span style="display: inline-block"
-            ><a
-              href="https://www.youtube.com/channel/UCD89PizJRsah50s8aaii7qA"
-              target="_blank"
-              class="socials"
-              ><i class="fab fa-youtube"></i></a
-          ></span>
-          <span style="display: inline-block"
-            ><a
-              href="https://github.com/RMalanco"
-              target="_blank"
-              class="socials"
-              ><i class="fab fa-github"></i></a
-          ></span>
-        </div>
+        "></div>
+    <div id="username">
+      <span style="display: block">Rafael Malanco</span><a href="https://github.com/rmalanco">@rmalanco</a>
+    </div>
+    <div id="userbio" style="display: block">Desarrollador .NET</div>
+    <div id="about">
+      <span style="display: block"><i class="fas fa-users"></i> &nbsp; rmalanco</span>
+      <span style="display: block"><i class="fas fa-envelope"></i> &nbsp;
+        <a href="mailto:rmalanco@rmalanco.com">rmalanco@rmalanco.com</a></span>
+      <span style="display: block"><i class="fas fa-link"></i> &nbsp;
+        <a href="https://rmalanco.com/">rmalanco.com</a></span>
+      <span style="display: block"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; Toluca.
+        México</span>
+      <div class="socials">
+        <span style="display: inline-block"><a href="https://twitter.com/RMalanco" target="_blank" class="socials"><i
+              class="fab fa-twitter"></i></a></span>
+        <span style="display: inline-block"><a href="https://www.linkedin.com/in/rafael-malanco-velazquez-aa7340171/"
+            target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
+        <span style="display: inline-block"><a href="https://www.facebook.com/rmalanco" target="_blank"
+            class="socials"><i class="fab fa-facebook-f"></i></a></span>
+        <span style="display: inline-block"><a href="https://www.instagram.com/genesismx1982/" target="_blank"
+            class="socials"><i class="fab fa-instagram"></i></a></span>
+        <span style="display: inline-block"><a href="https://www.youtube.com/channel/UCD89PizJRsah50s8aaii7qA"
+            target="_blank" class="socials"><i class="fab fa-youtube"></i></a></span>
+        <span style="display: inline-block"><a href="https://github.com/RMalanco" target="_blank" class="socials"><i
+              class="fab fa-github"></i></a></span>
       </div>
     </div>
-    <div id="display">
-      <div id="work">
-        <h1>👋 ¡Hola! Soy Rafael Malanco</h1>
-        <p>
-          Hola, soy Rafael Malanco. Tengo más de 20 años de experiencia en el
-          mundo de la informática, combinando soporte técnico, administración de
-          sistemas y desarrollo de software. Me gusta resolver problemas reales
-          con soluciones prácticas y fáciles de usar.<br /><br />
+  </div>
+  <div id="display">
+    <div id="work">
+      <h1>👋 ¡Hola! Soy Rafael Malanco</h1>
+      <p>
+        Hola, soy Rafael Malanco. Tengo más de 20 años de experiencia en el
+        mundo de la informática, combinando soporte técnico, administración de
+        sistemas y desarrollo de software. Me gusta resolver problemas reales
+        con soluciones prácticas y fáciles de usar.<br /><br />
 
-          Soy apasionado de la tecnología, autodidacta y siempre en busca de
-          aprender algo nuevo. Disfruto desde configurar servidores y redes,
-          hasta crear aplicaciones que ayuden a mejorar procesos dentro de una
-          oficina o empresa.<br /><br />
+        Soy apasionado de la tecnología, autodidacta y siempre en busca de
+        aprender algo nuevo. Disfruto desde configurar servidores y redes,
+        hasta crear aplicaciones que ayuden a mejorar procesos dentro de una
+        oficina o empresa.<br /><br />
 
-          Trabajo con tecnologías como VB.NET, C#, SQL Server, HTML, PHP y
-          MySQL, y me enfoco en construir sistemas sólidos que realmente hagan
-          la diferencia para los usuarios.
-        </p>
-        <div class="projects" id="work_section">
-          <a href="https://github.com/rmalanco/CamarasReviews" target="_blank">
-            <section>
-              <div class="section_title">CamarasReviews</div>
-              <div class="about_section">
-                <span style="display: block"
-                  >Aplicación web para reviews de cámaras desarrollada en C#
-                  .NET con Entity Framework.</span
-                >
-              </div>
-              <div class="bottom_section">
-                <span style="display: inline-block"
-                  ><i class="fas fa-code"></i>&nbsp; C#</span
-                >
-                <span><i class="fas fa-star"></i>&nbsp; 1</span>
-                <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
-              </div>
-            </section>
-          </a>
-
-          <a
-            href="https://github.com/rmalanco/rmalanco.github.io"
-            target="_blank"
-          >
-            <section>
-              <div class="section_title">rmalanco.github.io</div>
-              <div class="about_section">
-                <span style="display: block"
-                  >Config files for my GitHub profile.</span
-                >
-              </div>
-              <div class="bottom_section">
-                <span style="display: inline-block"
-                  ><i class="fas fa-code"></i>&nbsp; HTML</span
-                >
-                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-              </div>
-            </section>
-          </a>
-
-          <a href="https://github.com/rmalanco/webapi" target="_blank">
-            <section>
-              <div class="section_title">WebAPI</div>
-              <div class="about_section">
-                <span style="display: block"
-                  >API REST desarrollada en C# .NET para proyectos web.</span
-                >
-              </div>
-              <div class="bottom_section">
-                <span style="display: inline-block"
-                  ><i class="fas fa-code"></i>&nbsp; C#</span
-                >
-                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-              </div>
-            </section>
-          </a>
-
-          <a href="https://github.com/rmalanco/minimalAPI" target="_blank">
-            <section>
-              <div class="section_title">MinimalAPI</div>
-              <div class="about_section">
-                <span style="display: block"
-                  >Implementación de Minimal API en .NET para desarrollos
-                  ligeros y eficientes.</span
-                >
-              </div>
-              <div class="bottom_section">
-                <span style="display: inline-block"
-                  ><i class="fas fa-code"></i>&nbsp; C#</span
-                >
-                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-              </div>
-            </section>
-          </a>
-
-          <a href="https://github.com/rmalanco/proyectoef" target="_blank">
-            <section>
-              <div class="section_title">ProyectoEF</div>
-              <div class="about_section">
-                <span style="display: block"
-                  >Proyecto de ejemplo usando Entity Framework para manejo de
-                  datos.</span
-                >
-              </div>
-              <div class="bottom_section">
-                <span style="display: inline-block"
-                  ><i class="fas fa-code"></i>&nbsp; C#</span
-                >
-                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-              </div>
-            </section>
-          </a>
-
-          <a href="https://github.com/rmalanco/Curso_HTML5" target="_blank">
-            <section>
-              <div class="section_title">Curso HTML5</div>
-              <div class="about_section">
-                <span style="display: block"
-                  >Material y ejemplos de curso de HTML5 para desarrollo
-                  web.</span
-                >
-              </div>
-              <div class="bottom_section">
-                <span style="display: inline-block"
-                  ><i class="fas fa-code"></i>&nbsp; HTML</span
-                >
-                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-              </div>
-            </section>
-          </a>
-        </div>
-      </div>
-      <div id="forks" style="display: none">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section"></div>
-      </div>
-      <div id="resume_section">
-        <h1>🎓 Educación y Experiencia</h1>
-        <div class="resume-content">
-          <div class="education" id="education">
-            <div class="projects" id="education_section">
-              <section>
-                <div class="section_title">🎓 Educación</div>
-                <div class="education-about-section">
-                  <span style="display: block; margin: 1vh 0;"><strong>Programador Analista en Sistemas Avanzados</strong></span>
-                  <span style="display: block;">ICEP - Instituto de computación y electrónica profesional, S.C.</span>
-                </div>
-                <div class="bottom_section">
-                  <span><i class="fas fa-calendar-alt"></i>&nbsp; 1997 - 2000</span>
-                </div>
-              </section>
-              
-              <section>
-                <div class="section_title">🏆 Certificaciones</div>
-                <div class="education-about-section">
-                  <span style="display: block; margin: 1vh 0;">
-                    <strong>
-                      <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=969696" target="_blank">
-                        Scrum Fundamentals Certified (SFC)
-                      </a>
-                    </strong>
-                  </span>
-                  <span style="display: block;">SCRUMstudy - Accreditation Body for Scrum and Agile</span>
-                </div>
-                <div class="bottom_section">
-                  <span><i class="fas fa-calendar-alt"></i>&nbsp; 2023</span>
-                  <span><i class="fas fa-external-link-alt"></i>&nbsp; Verificable</span>
-                </div>
-              </section>
+        Trabajo con tecnologías como VB.NET, C#, SQL Server, HTML, PHP y
+        MySQL, y me enfoco en construir sistemas sólidos que realmente hagan
+        la diferencia para los usuarios.
+      </p>
+      <div class="projects" id="work_section">
+        <a href="https://github.com/rmalanco/CamarasReviews" target="_blank">
+          <section>
+            <div class="section_title">CamarasReviews</div>
+            <div class="about_section">
+              <span style="display: block">Aplicación web para reviews de cámaras desarrollada en C#
+                .NET con Entity Framework.</span>
             </div>
+            <div class="bottom_section">
+              <span style="display: inline-block"><i class="fas fa-code"></i>&nbsp; C#</span>
+              <span><i class="fas fa-star"></i>&nbsp; 1</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+            </div>
+          </section>
+        </a>
+
+        <a href="https://github.com/rmalanco/rmalanco.github.io" target="_blank">
+          <section>
+            <div class="section_title">rmalanco.github.io</div>
+            <div class="about_section">
+              <span style="display: block">Config files for my GitHub profile.</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display: inline-block"><i class="fas fa-code"></i>&nbsp; HTML</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+
+        <a href="https://github.com/rmalanco/webapi" target="_blank">
+          <section>
+            <div class="section_title">WebAPI</div>
+            <div class="about_section">
+              <span style="display: block">API REST desarrollada en C# .NET para proyectos web.</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display: inline-block"><i class="fas fa-code"></i>&nbsp; C#</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+
+        <a href="https://github.com/rmalanco/minimalAPI" target="_blank">
+          <section>
+            <div class="section_title">MinimalAPI</div>
+            <div class="about_section">
+              <span style="display: block">Implementación de Minimal API en .NET para desarrollos
+                ligeros y eficientes.</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display: inline-block"><i class="fas fa-code"></i>&nbsp; C#</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+
+        <a href="https://github.com/rmalanco/proyectoef" target="_blank">
+          <section>
+            <div class="section_title">ProyectoEF</div>
+            <div class="about_section">
+              <span style="display: block">Proyecto de ejemplo usando Entity Framework para manejo de
+                datos.</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display: inline-block"><i class="fas fa-code"></i>&nbsp; C#</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+
+        <a href="https://github.com/rmalanco/Curso_HTML5" target="_blank">
+          <section>
+            <div class="section_title">Curso HTML5</div>
+            <div class="about_section">
+              <span style="display: block">Material y ejemplos de curso de HTML5 para desarrollo
+                web.</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display: inline-block"><i class="fas fa-code"></i>&nbsp; HTML</span>
+              <span><i class="fas fa-star"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+            </div>
+          </section>
+        </a>
+      </div>
+    </div>
+    <div id="forks" style="display: none">
+      <h1>Forks.</h1>
+      <div class="projects" id="forks_section"></div>
+    </div>
+    <div id="resume_section">
+      <h1>🎓 Educación y Experiencia</h1>
+      <div class="resume-content">
+        <div class="education" id="education">
+          <div class="projects" id="education_section">
+            <section>
+              <div class="section_title">🎓 Educación</div>
+              <div class="education-about-section">
+                <span style="display: block; margin: 1vh 0;"><strong>Programador Analista en Sistemas
+                    Avanzados</strong></span>
+                <span style="display: block;">ICEP - Instituto de computación y electrónica profesional, S.C.</span>
+              </div>
+              <div class="bottom_section">
+                <span><i class="fas fa-calendar-alt"></i>&nbsp; 1997 - 2000</span>
+              </div>
+            </section>
+
+            <section>
+              <div class="section_title">🏆 Certificaciones</div>
+              <div class="education-about-section">
+                <span style="display: block; margin: 1vh 0;">
+                  <strong>
+                    <a href="https://www.scrumstudy.com/certification/verify?type=SFC&number=969696" target="_blank">
+                      Scrum Fundamentals Certified (SFC)
+                    </a>
+                  </strong>
+                </span>
+                <span style="display: block;">SCRUMstudy - Accreditation Body for Scrum and Agile</span>
+              </div>
+              <div class="bottom_section">
+                <span><i class="fas fa-calendar-alt"></i>&nbsp; 2023</span>
+                <span><i class="fas fa-external-link-alt"></i>&nbsp; Verificable</span>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="skills" id="skills">
+          <h3>🛠️ Tecnologías que domino</h3>
+          <div class="projects" id="skills_section">
+            <section>
+              <div class="section_title">Lenguajes y Frameworks</div>
+              <div class="skills-about-section">
+                <span class="tech-item"><i class="fab fa-microsoft"></i>C# / .NET Core / .NET Framework</span>
+                <span class="tech-item"><i class="fab fa-microsoft"></i>VB.NET</span>
+                <span class="tech-item"><i class="fab fa-php"></i>PHP / Laravel</span>
+                <span class="tech-item"><i class="fab fa-python"></i>Python</span>
+                <span class="tech-item"><i class="fab fa-react"></i>React / Angular</span>
+              </div>
+            </section>
+
+            <section>
+              <div class="section_title">Bases de Datos</div>
+              <div class="skills-about-section">
+                <span class="tech-item"><i class="fas fa-database"></i>MS SQL Server</span>
+                <span class="tech-item"><i class="fas fa-database"></i>MySQL</span>
+                <span class="tech-item"><i class="fas fa-database"></i>PostgreSQL</span>
+                <span class="tech-item"><i class="fas fa-code"></i>Entity Framework</span>
+              </div>
+            </section>
+
+            <section>
+              <div class="section_title">Frontend y Web</div>
+              <div class="skills-about-section">
+                <span class="tech-item"><i class="fab fa-html5"></i>HTML5</span>
+                <span class="tech-item"><i class="fab fa-css3-alt"></i>CSS3</span>
+                <span class="tech-item"><i class="fab fa-js-square"></i>JavaScript / jQuery</span>
+                <span class="tech-item"><i class="fab fa-bootstrap"></i>Bootstrap</span>
+              </div>
+            </section>
+
+            <section>
+              <div class="section_title">Herramientas y DevOps</div>
+              <div class="skills-about-section">
+                <span class="tech-item"><i class="fab fa-git-alt"></i>Git / GitHub / GitLab</span>
+                <span class="tech-item"><i class="fas fa-code"></i>Visual Studio / VS Code</span>
+                <span class="tech-item"><i class="fas fa-server"></i>Apache / IIS</span>
+              </div>
+            </section>
           </div>
 
-          <div class="skills" id="skills">
-            <h3>🛠️ Tecnologías que domino</h3>
-            <div class="projects" id="skills_section">
-              <section>
-                <div class="section_title">Lenguajes y Frameworks</div>
-                <div class="skills-about-section">
-                  <span class="tech-item"><i class="fab fa-microsoft"></i>C# / .NET Core / .NET Framework</span>
-                  <span class="tech-item"><i class="fab fa-microsoft"></i>VB.NET</span>
-                  <span class="tech-item"><i class="fab fa-php"></i>PHP / Laravel</span>
-                  <span class="tech-item"><i class="fab fa-python"></i>Python</span>
-                  <span class="tech-item"><i class="fab fa-react"></i>React / Angular</span>
-                </div>
-              </section>
-
-              <section>
-                <div class="section_title">Bases de Datos</div>
-                <div class="skills-about-section">
-                  <span class="tech-item"><i class="fas fa-database"></i>MS SQL Server</span>
-                  <span class="tech-item"><i class="fas fa-database"></i>MySQL</span>
-                  <span class="tech-item"><i class="fas fa-database"></i>PostgreSQL</span>
-                  <span class="tech-item"><i class="fas fa-code"></i>Entity Framework</span>
-                </div>
-              </section>
-
-              <section>
-                <div class="section_title">Frontend y Web</div>
-                <div class="skills-about-section">
-                  <span class="tech-item"><i class="fab fa-html5"></i>HTML5</span>
-                  <span class="tech-item"><i class="fab fa-css3-alt"></i>CSS3</span>
-                  <span class="tech-item"><i class="fab fa-js-square"></i>JavaScript / jQuery</span>
-                  <span class="tech-item"><i class="fab fa-bootstrap"></i>Bootstrap</span>
-                </div>
-              </section>
-
-              <section>
-                <div class="section_title">Herramientas y DevOps</div>
-                <div class="skills-about-section">
-                  <span class="tech-item"><i class="fab fa-git-alt"></i>Git / GitHub / GitLab</span>
-                  <span class="tech-item"><i class="fas fa-code"></i>Visual Studio / VS Code</span>
-                  <span class="tech-item"><i class="fas fa-server"></i>Apache / IIS</span>
-                </div>
-              </section>
-            </div>
-
-            <h3>🚀 Actualmente trabajando en</h3>
-            <div class="projects" id="current_work_section">
-              <section>
-                <div class="section_title">Proyectos Actuales</div>
-                <div class="skills-about-section">
-                  <span class="tech-item"><i class="fas fa-sync-alt"></i>Migración y soporte de aplicaciones empresariales</span>
-                  <span class="tech-item"><i class="fas fa-layer-group"></i>Desarrollo de herramientas internas bajo arquitectura por capas</span>
-                  <span class="tech-item"><i class="fas fa-database"></i>Optimización de bases de datos y lógica de negocio</span>
-                  <span class="tech-item"><i class="fas fa-chart-line"></i>Mejora continua de habilidades técnicas y soft skills</span>
-                </div>
-              </section>
-            </div>
+          <h3>🚀 Actualmente trabajando en</h3>
+          <div class="projects" id="current_work_section">
+            <section>
+              <div class="section_title">Proyectos Actuales</div>
+              <div class="skills-about-section">
+                <span class="tech-item"><i class="fas fa-sync-alt"></i>Migración y soporte de aplicaciones
+                  empresariales</span>
+                <span class="tech-item"><i class="fas fa-layer-group"></i>Desarrollo de herramientas internas bajo
+                  arquitectura por capas</span>
+                <span class="tech-item"><i class="fas fa-database"></i>Optimización de bases de datos y lógica de
+                  negocio</span>
+                <span class="tech-item"><i class="fas fa-chart-line"></i>Mejora continua de habilidades técnicas y soft
+                  skills</span>
+              </div>
+            </section>
           </div>
         </div>
       </div>
-      <div id="footer">
-        <div id="footer_text">
-          <span>© 2025 Rafael Malanco. All rights reserved.</span>
-        </div>
+    </div>
+    <div id="footer">
+      <div id="footer_text">
+        <span>© 2025 Rafael Malanco. All rights reserved.</span>
       </div>
     </div>
-    <script type="text/javascript">
+  </div>
+  <script type="text/javascript">
+    setTimeout(function () {
+      document.getElementById('loading').classList.add('animated');
+      document.getElementById('loading').classList.add('fadeOut');
       setTimeout(function () {
-        document.getElementById('loading').classList.add('animated');
-        document.getElementById('loading').classList.add('fadeOut');
-        setTimeout(function () {
-          document.getElementById('loading').classList.remove('animated');
-          document.getElementById('loading').classList.remove('fadeOut');
-          document.getElementById('loading').style.display = 'none';
-        }, 800);
-      }, 1500);
-    </script>
+        document.getElementById('loading').classList.remove('animated');
+        document.getElementById('loading').classList.remove('fadeOut');
+        document.getElementById('loading').style.display = 'none';
+      }, 800);
+    }, 1500);
+  </script>
 
-    <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: '#work_section',
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true,
-      });
+  <script>
+    const magicProjectsGrid = new MagicGrid({
+      container: '#work_section',
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true,
+    });
 
-      const magicForksGrid = new MagicGrid({
-        container: '#forks_section',
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true,
-      });
+    const magicForksGrid = new MagicGrid({
+      container: '#forks_section',
+      animate: false,
+      gutter: 30, // default gutter size
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true,
+    });
 
-      const magicEducationGrid = new MagicGrid({
-        container: '#education_section',
-        animate: false,
-        gutter: 30,
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true,
-      });
+    const magicEducationGrid = new MagicGrid({
+      container: '#education_section',
+      animate: false,
+      gutter: 30,
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true,
+    });
 
-      const magicSkillsGrid = new MagicGrid({
-        container: '#skills_section',
-        animate: false,
-        gutter: 30,
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true,
-      });
+    const magicSkillsGrid = new MagicGrid({
+      container: '#skills_section',
+      animate: false,
+      gutter: 30,
+      static: true,
+      useMin: false,
+      maxColumns: 2,
+      useTransform: true,
+    });
 
-      const magicCurrentWorkGrid = new MagicGrid({
-        container: '#current_work_section',
-        animate: false,
-        gutter: 30,
-        static: true,
-        useMin: false,
-        maxColumns: 1,
-        useTransform: true,
-      });
+    const magicCurrentWorkGrid = new MagicGrid({
+      container: '#current_work_section',
+      animate: false,
+      gutter: 30,
+      static: true,
+      useMin: false,
+      maxColumns: 1,
+      useTransform: true,
+    });
 
-      $('document').ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-        magicEducationGrid.listen();
-        magicSkillsGrid.listen();
-        magicCurrentWorkGrid.listen();
-      });
-    </script>
-  </body>
+    $('document').ready(() => {
+      magicProjectsGrid.listen();
+      magicForksGrid.listen();
+      magicEducationGrid.listen();
+      magicSkillsGrid.listen();
+      magicCurrentWorkGrid.listen();
+    });
+  </script>
+</body>
+
 </html>
