@@ -648,6 +648,62 @@ body {
   margin: 0.5vh 0;
 }
 
+/* Estilo optimizado para las secciones de habilidades técnicas */
+.skills-about-section {
+  font-size: 16px;
+  font-family: "Questrial", sans-serif;
+  margin: 1vh 0px;
+  font-weight: normal;
+  word-wrap: break-word;
+  line-height: 1.6;
+}
+
+.skills-about-section .tech-item {
+  display: block;
+  margin: 0.8vh 0;
+  padding: 0.3vh 0;
+  font-size: 15px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.skills-about-section .tech-item:hover {
+  color: #4a9eff;
+}
+
+.skills-about-section .tech-item i {
+  width: 18px;
+  font-size: 14px;
+  margin-right: 8px;
+  text-align: center;
+}
+
+/* Estilo para educación y certificaciones */
+.education-about-section {
+  font-size: 16px;
+  font-family: "Questrial", sans-serif;
+  margin: 1.5vh 0px;
+  font-weight: normal;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.education-about-section strong {
+  color: #4a9eff;
+  font-weight: bold;
+}
+
+.education-about-section a {
+  color: #4a9eff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.education-about-section a:hover {
+  color: #66b3ff;
+  text-decoration: underline;
+}
+
 @media (max-width: 800px) {
   .contact-info {
     grid-template-columns: 1fr;
@@ -655,5 +711,15 @@ body {
   
   .skills-list li {
     padding-left: 3vw;
+  }
+  
+  .skills-about-section .tech-item {
+    font-size: 14px;
+    margin: 0.6vh 0;
+  }
+  
+  .education-about-section {
+    font-size: 15px;
+    margin: 1vh 0px;
   }
 }
