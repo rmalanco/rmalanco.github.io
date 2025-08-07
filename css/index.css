@@ -290,6 +290,22 @@ body {
   padding: 4vh 0px !important;
 }
 
+/* Estilos para las secciones de skills siguiendo el patrón de work */
+#skills {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+}
+
+.skills {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+}
+
+.education {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+}
+
 .projects {
   margin-left: -15px;
   /* align section w/ heading above */
@@ -458,6 +474,19 @@ body {
   }
 
   #work {
+    margin: 0px;
+  }
+
+  /* Estilos responsivos para skills siguiendo el patrón de work */
+  #skills {
+    margin: 0px;
+  }
+
+  .skills {
+    margin: 0px;
+  }
+
+  .education {
     margin: 0px;
   }
 
